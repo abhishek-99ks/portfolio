@@ -16,6 +16,7 @@ li {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 .container {
@@ -137,6 +138,7 @@ header {
     grid-template-columns: 1fr;
     row-gap: 100px;
     max-width: 800px;
+    margin: auto;
   }
 
   .myName {
@@ -146,11 +148,16 @@ header {
   .myIntro {
     text-align: center;
   }
+
+  .myInfo {
+    padding-bottom: 60px;
+    border-bottom: 1px solid white;
+  }
 }
 
 .skill-section {
   min-height: 72vh;
-  padding: 100px 0px;
+  padding: 50px 0px;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -163,14 +170,15 @@ header {
 }
 
 .coding-logos {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 40px;
+  row-gap: 60px;
 }
 
 .language {
   display: flex;
-  width: 30%;
+  /* width: 30%; */
   flex-direction: column;
   align-items: center;
   margin: auto;
@@ -195,7 +203,7 @@ header {
   justify-content: center;
   background-color: var(--black);
 
-  min-height: 72vh;
+  min-height: 73vh;
 }
 
 .project-section .section-heading {
@@ -203,22 +211,25 @@ header {
 }
 
 .project-wrapper {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-
-  gap: 60px;
+  /* width: 100%; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
 }
 
 .project {
-  max-width: 400px;
+  max-width: 350px;
   min-width: 250px;
   margin: auto;
   margin-top: 0px;
+
   border: none;
   border-radius: 10px;
   background-color: var(--teal);
   color: var(--black);
+
+  -webkit-box-shadow: 3px 6px 40px -8px var(--teal);
+  box-shadow: 3px 6px 40px -8px var(--teal);
 }
 
 .project-img {
@@ -243,11 +254,15 @@ header {
 
 footer.container {
   background-color: var(--teal);
-  min-height: 92vh;
+  min-height: 85vh;
 }
 
 footer .wrapper {
   padding: 100px 20px;
+}
+
+footer .section-heading {
+  margin-bottom: 50px;
 }
 
 form {

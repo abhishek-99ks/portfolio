@@ -22,14 +22,14 @@
         <nav class="navbar">
           <h1 class="nav-logo">Abhishek K S</h1>
           <ul class="nav-links">
-            <li class="nav-link">About</li>
-            <li class="nav-link">Blog</li>
-            <li class="nav-link">Contact</li>
+            <li class="nav-link"><a href="#about">About</a></li>
+            <li class="nav-link"><a href="#project">Project</a></li>
+            <li class="nav-link"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <section class="hero-section container">
+    <section class="hero-section container" id="about">
       <div class="wrapper">
         <div class="hero-grid">
           <div class="myInfo">
@@ -51,8 +51,8 @@
               currently in the final year.
               <br />
               <br />
-              I am interested in Data Analytics and Web Development along with
-              many others skills and technologies.
+              I am interested in Web Development and Data Analytics and like to
+              learn many other skills and technologies.
             </p>
           </div>
         </div>
@@ -107,92 +107,75 @@
         </div>
       </div>
     </section>
-    <section class="project-section container">
+    <section class="project-section container" id="project">
       <div class="wrapper">
         <h1 class="section-heading">My Projects</h1>
         <div class="project-wrapper">
-          <div class="project">
-            <img
-              src="https://aksingh-portfolio.netlify.app/images/blogspot.png"
-              alt=""
-              class="project-img"
-            />
-            <p class="project-name">Lorem, ipsum dolor</p>
-            <p class="project-desc">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              id tempora eum eligendi sequi, at aperiam atque, porro eos
-              voluptates officiis illo ipsum impedit maiores!
-            </p>
-          </div>
-          <div class="project">
-            <img
-              src="https://aksingh-portfolio.netlify.app/images/blogspot.png"
-              alt=""
-              class="project-img"
-            />
-            <p class="project-name">Lorem, ipsum dolor</p>
-            <p class="project-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
-              cupiditate facilis quasi ab magni ex commodi nobis eius deleniti
-              praesentium?
-            </p>
-          </div>
-          <div class="project">
-            <img
-              src="https://aksingh-portfolio.netlify.app/images/blogspot.png"
-              alt=""
-              class="project-img"
-            />
-            <p class="project-name">Lorem, ipsum dolor</p>
-            <p class="project-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
-              cupiditate facilis quasi ab magni ex commodi nobis eius deleniti
-              praesentium?
-            </p>
-          </div>
-          <div class="project">
-            <img
-              src="https://aksingh-portfolio.netlify.app/images/blogspot.png"
-              alt=""
-              class="project-img"
-            />
-            <p class="project-name">Lorem, ipsum dolor</p>
-            <p class="project-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
-              cupiditate facilis quasi ab magni ex commodi nobis eius deleniti
-              praesentium?
-            </p>
-          </div>
-          <div class="project">
-            <img
-              src="https://aksingh-portfolio.netlify.app/images/blogspot.png"
-              alt=""
-              class="project-img"
-            />
-            <p class="project-name">Lorem, ipsum dolor</p>
-            <p class="project-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
-              cupiditate facilis quasi ab magni ex commodi nobis eius deleniti
-              praesentium?
-            </p>
-          </div>
-          <div class="project">
-            <img
-              src="https://aksingh-portfolio.netlify.app/images/blogspot.png"
-              alt=""
-              class="project-img"
-            />
-            <p class="project-name">Lorem, ipsum dolor</p>
-            <p class="project-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
-              cupiditate facilis quasi ab magni ex commodi nobis eius deleniti
-              praesentium?
-            </p>
-          </div>
+          <a href="http://blogspotproject.pythonanywhere.com/" target="_blank">
+            <div class="project">
+              <img
+                src="https://aksingh-portfolio.netlify.app/images/blogspot.png"
+                alt=""
+                class="project-img"
+              />
+              <p class="project-name">BlogSpot</p>
+              <p class="project-desc">
+                A blogging website built using Django, HTML/CSS and JS
+              </p>
+            </div>
+          </a>
+          <a href="https://www.dbooks.tk/" target="_blank">
+            <div class="project">
+              <img
+                src="https://aksingh-portfolio.netlify.app/images/dbooks.jpg"
+                alt=""
+                class="project-img"
+              />
+              <p class="project-name">dbooks</p>
+              <p class="project-desc">
+                A blockchain based book purchasing website my team built during
+                a hackathon
+              </p>
+            </div>
+          </a>
+          <a
+            href="https://github.com/abhishek-99ks/Data_Analytics_Projects/blob/main/Web_Scraping_Data_Analysis_Amazon_India.ipynb"
+            target="_blank"
+          >
+            <div class="project">
+              <img
+                src="https://aksingh-portfolio.netlify.app/images/webscraping.jpg"
+                alt=""
+                class="project-img"
+              />
+              <p class="project-name">Web scraping on Amazon India website</p>
+              <p class="project-desc">
+                Used Selenium and Beautifulsoup to get the data and performed
+                basic analysis
+              </p>
+            </div>
+          </a>
+          <a
+            href="https://github.com/abhishek-99ks/Data_Analytics_Projects/blob/main/EDA_Stackoverflow_2020.ipynb"
+            target="_blank"
+          >
+            <div class="project">
+              <img
+                src="https://aksingh-portfolio.netlify.app/images/EDA.jpg"
+                alt=""
+                class="project-img"
+              />
+              <p class="project-name">EDA on StackOverflow survey 2020</p>
+              <p class="project-desc">
+                Performed exploratory analysis on StackOverflow's yearly survey
+                for year 2020
+              </p>
+            </div>
+          </a>
         </div>
       </div>
     </section>
-    <footer class="container">
+    <footer class="container" id="contact">
       <div class="wrapper">
         <h1 class="section-heading">Contact Me</h1>
         <form action="" method="POST">
