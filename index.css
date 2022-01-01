@@ -268,20 +268,26 @@ footer .section-heading {
 form {
   max-width: 700px;
   margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
 }
 
 .form-field {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .f-label {
   margin-bottom: 10px;
   font-size: 20px;
   font-weight: bold;
+  width: 100%;
 }
 
 .f-input {
+  width: calc(100% - 10px);
   margin-bottom: 30px;
   padding: 5px;
   min-height: 30px;
@@ -296,4 +302,15 @@ form {
 textarea.f-input {
   margin-bottom: 0px;
   height: 300px;
+}
+
+#submit-btn {
+  width: 150px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: var(--black);
+  color: var(--teal);
+  border-radius: 20px;
+  margin-top: 40px;
+  padding: 10px;
 }
