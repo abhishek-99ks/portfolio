@@ -34,7 +34,7 @@ header {
   top: 0;
   z-index: 999;
   background-color: black;
-  color: rgb(2, 209, 209);
+  color: var(--teal);
 }
 
 .navbar {
@@ -50,13 +50,6 @@ header {
   z-index: 999;
 }
 
-@media only screen and (max-width: 800px) {
-  .navbar {
-    flex-direction: column;
-    row-gap: 20px;
-  }
-}
-
 .nav-logo {
   font-size: 35px;
 }
@@ -70,8 +63,16 @@ header {
   min-width: 100px;
   text-align: center;
   font-size: 20px;
+  font-weight: 500;
 
   padding: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    row-gap: 20px;
+  }
 }
 
 .hero-section {
@@ -80,7 +81,7 @@ header {
   padding: 100px 0px;
   display: flex;
   align-items: center;
-  background-color: #040303;
+  background-color: var(--black);
   color: white;
 }
 
@@ -88,16 +89,6 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 100px;
-}
-
-.about-me {
-  display: grid;
-  align-content: center;
-}
-
-.about-me .section-heading {
-  text-align: left;
-  margin-bottom: 60px;
 }
 
 .my-desc {
@@ -127,7 +118,17 @@ header {
   font-size: 35px;
   font-weight: unset;
   text-align: left;
-  color: rgb(2, 209, 209);
+  color: var(--teal);
+}
+
+.about-me {
+  display: grid;
+  align-content: center;
+}
+
+.about-me .section-heading {
+  text-align: left;
+  margin-bottom: 60px;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -191,7 +192,7 @@ header {
   padding: 100px 0px;
   align-items: center;
   justify-content: center;
-  background-color: #040303;
+  background-color: var(--black);
 
   min-height: 72vh;
 }
@@ -215,15 +216,15 @@ header {
   margin-top: 0px;
   border: none;
   border-radius: 10px;
-  background-color: rgb(2, 209, 209);
-  color: black;
+  background-color: var(--teal);
+  color: var(--black);
 }
 
 .project-img {
   width: 100%;
   max-height: 250px;
   margin-bottom: 10px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--black);
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
 }
@@ -240,15 +241,12 @@ header {
 }
 
 footer.container {
-  background-color: rgb(2, 209, 209);
+  background-color: var(--teal);
   min-height: 92vh;
 }
 
 footer .wrapper {
   padding: 100px 20px;
-  /* display: grid; */
-  /* grid-template-columns: 1fr; */
-  /* align-items: center; */
 }
 
 form {
@@ -272,7 +270,7 @@ form {
   padding: 5px;
   min-height: 30px;
 
-  border: 1px solid black;
+  border: 1px solid var(--black);
 }
 
 textarea.f-input {
