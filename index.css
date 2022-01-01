@@ -303,6 +303,7 @@ form {
 textarea.f-input {
   margin-bottom: 0px;
   height: 200px;
+  padding: 10px;
 }
 
 #submit-btn {
