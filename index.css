@@ -24,6 +24,7 @@ a {
 }
 
 .wrapper {
+  width: 80vw;
   max-width: 1500px;
   margin: auto;
   padding: 20px;
@@ -134,7 +135,7 @@ header {
 @media only screen and (max-width: 1300px) {
   .hero-grid {
     grid-template-columns: 1fr;
-    row-gap: 150px;
+    row-gap: 100px;
     max-width: 800px;
   }
 
@@ -270,7 +271,11 @@ form {
   padding: 5px;
   min-height: 30px;
 
-  border: 1px solid var(--black);
+  border: none;
+}
+
+.f-input:focus {
+  outline: none;
 }
 
 textarea.f-input {
