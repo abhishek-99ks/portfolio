@@ -289,8 +289,9 @@ form {
 .f-input {
   width: calc(100% - 10px);
   margin-bottom: 30px;
-  padding: 5px;
+  padding: 5px 10px;
   min-height: 30px;
+  font-size: 20px;
 
   border: none;
 }
@@ -301,7 +302,7 @@ form {
 
 textarea.f-input {
   margin-bottom: 0px;
-  height: 300px;
+  height: 200px;
 }
 
 #submit-btn {
@@ -313,4 +314,7 @@ textarea.f-input {
   border-radius: 20px;
   margin-top: 40px;
   padding: 10px;
+
+  border: none;
+  cursor: pointer;
 }
